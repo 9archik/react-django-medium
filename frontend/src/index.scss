@@ -1,0 +1,28 @@
+$base-color: black;
+$add-color: #9c27b0;
+$white-color: white;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: Raleway;
+  box-sizing: border-box;
+}
+
+button,
+a {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a.active {
+  border-bottom: 1px solid $add-color;
+}

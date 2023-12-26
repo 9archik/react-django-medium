@@ -1,0 +1,24 @@
+@import "../../index.scss";
+.container {
+    position: fixed;
+    background: $base-color;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translate(100%);
+    transition: 0.5s;
+    width: 66.66%;
+    z-index: 10;
+    padding: 90px 20% 0 20%;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 90px 0 0 0;
+        width:100%;
+    }
+}
+
+.container.active {
+    transform: translate(0);
+}

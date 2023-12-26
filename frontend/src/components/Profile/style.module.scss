@@ -1,0 +1,67 @@
+@import "../../index.scss";
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        margin: 30px 0 0 0;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+        color: $white-color;
+        background-color: $add-color;
+        border-radius: 5px;
+        display: block;
+        margin: 20px 0 0 0;
+    }
+
+    h2 {
+        font-size: 32px;
+        color: $white-color;
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+}
+
+.labelFile {
+    display: block;
+    margin: 30px 0 0 0;
+
+    span {
+        padding: 10px;
+        font-size: 16px;
+        color: $white-color;
+        background-color: $add-color;
+        border-radius: 5px;
+        display: block;
+    }
+    input {
+        display: none;
+    }
+}
+
+.infoItem{
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    color: $white-color;
+}
+
+.errorNotify{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transform: translateX(120%);
+    padding: 10px 20px;
+    font-size: 16px;
+    color: $white-color;
+    background-color: red;
+    border-radius: 10px;
+    transition: .5s;
+
+    &.active{
+        transform: translateX(0);
+    }
+}

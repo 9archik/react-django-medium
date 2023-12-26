@@ -1,0 +1,10 @@
+@import "../../index.scss";
+.container
+{
+    color: $white-color;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}

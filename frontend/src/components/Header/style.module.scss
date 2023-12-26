@@ -1,0 +1,94 @@
+@import "../../index.scss";
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: $base-color;
+    transition: 0.5s;
+}
+
+header.burgerActive
+{
+    background-color: rgba(240, 255, 255, 0);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    .logo {
+        color: $white-color;
+        font-size: 44px;
+        font-weight: 700;
+    }
+
+    nav {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        a,
+        button {
+            color: $add-color;
+            font-size: 16px;
+            padding: 0 20px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .burgerBtn {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 100;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: 0;
+            left: 0;
+            background-color: $white-color;
+            transition: 0.5s;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $white-color;
+            transition: 0.5s;
+        }
+    }
+
+    .burgerBtn.active {
+        &::before {
+            transform: rotate(45deg) translate(0, 13px);
+        }
+
+        &::after {
+            transform: rotate(-45deg) translate(0, -11px);
+        }
+    }
+}
+
+.burgerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .burgerAct {
+        color: $add-color;
+        font-size: 24px;
+    }
+}
+

@@ -1,0 +1,9 @@
+@import "../../index.scss";
+.container
+{
+    display:flex;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+}
