@@ -7,7 +7,7 @@
     right: 0;
     transform: translate(100%);
     transition: 0.5s;
-    width: 66.66%;
+    width: 100%;
     z-index: 10;
     padding: 90px 20% 0 20%;
 }
@@ -15,10 +15,11 @@
 @media (max-width: 480px) {
     .container {
         padding: 90px 0 0 0;
-        width:100%;
+        width: 100%;
     }
 }
 
 .container.active {
     transform: translate(0);
+    background: rgb(0, 0, 0);
 }
